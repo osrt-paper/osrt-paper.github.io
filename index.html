@@ -31,27 +31,21 @@
       .neg-space {
         margin-top: -1.3em;
       }
-      .teaser-video::before {
-        padding-top: 15%;
-      }
-      .teaser-video {
+      .teaser-image {
         padding-left: 5%;
         padding-right: 5%;
         margin-bottom: 2em;
       }
-      .sketchy-video::before {
-        padding-top: 70%;
-      }
-      .cater-video::before {
-        padding-top: 22%;
-      }
-      .movi-video::before {
-        padding-top: 15%;
+      .msn-video::before {
+        padding-top: 40%;
       }
       .content-block {
         padding-left: .5em;
         padding-right: .5em;
         padding-bottom: 2em;
+      }
+      .col-md {
+        margin-bottom: 1em;
       }
       .citation .description {
         font-family: "Courier", monospace;
@@ -102,24 +96,21 @@
       <!-- Paper link -->
       <div class="paper-link">
         <p class="text-center">
-          <a class="btn btn-primary" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Paper</a>
+          <a class="btn btn-primary" href="#" target="_blank">Paper</a>
         </p>
       </div>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="col embed-responsive teaser-video">
-          <video muted autoplay loop playsinline>
-            <source src="figures/teaser_video.mp4" type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-          </video>
+        <div class="col embed-responsive teaser-image">
+          <img src="data/osrt.png" style="width: 100%; object-fit: contain" />
         </div>
       </div>
       <div class="row">
         <div class="col">
           <p class="text-center text-secondary neg-space">
-            OSRT is amazing.
+            <i>Figure</i>: OSRT is a 3D scene representation learning method that decomposes scenes into individual objects without supervision.
           </p>
         </div>
       </div>
@@ -129,24 +120,7 @@
         <div class="row">
           <div class="col">
             <p class="description">
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
-              OSRT is so wonderfully great.
+              A compositional understanding of the world in terms of objects and their geometry in 3D space is considered a cornerstone of human cognition. Facilitating the learning of such a representation in neural networks holds promise for substantially improving labeled data efficiency. As a key step in this direction, we make progress on the problem of learning 3D-consistent decompositions of complex scenes into individual objects in an unsupervised fashion. We introduce <i>Object Scene Representation Transformer (OSRT)</i>, a 3D-centric model in which individual object representations naturally emerge through novel view synthesis. OSRT scales to significantly more complex scenes with larger diversity of objects and backgrounds than existing methods. At the same time, it is multiple orders of magnitude faster at compositional rendering thanks to its light field parametrization and the novel <i>Slot Mixer</i> decoder. We believe this work will not only accelerate future architecture exploration and scaling efforts, but it will also serve as a useful tool for both object-centric as well as neural scene representation learning communities.
             </p>
           </div>
         </div>
@@ -155,25 +129,10 @@
       <div class="content-block">
         <div class="row">
           <div class="col">
-            <h2>More wow results</h2>
+            <h2>Qualitative Results</h2>
             <hr />
             <p class="description">
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
-              OSRT is so so good.
+              OSRT is able to learn object-decomposed 3D scene representations without supervision on complex multi-object scenes with a large variety of objects and textured backgrounds. Below, we show example qualitative results on 3D scenes not seen during model training.
             </p>
           </div>
         </div>
@@ -181,51 +140,56 @@
 
           <div class="col-md">
             <div class="row">
-              <div class="col embed-responsive sketchy-video">
+              <div class="col embed-responsive msn-video">
                 <video muted autoplay loop playsinline>
-                  <source src="figures/sketchy_1.mp4" type="video/mp4">
+                  <source src="data/osrt_results_1.mp4" type="video/mp4">
                   Sorry, your browser doesn't support embedded videos.
                 </video>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <p class="text-center text-secondary">Such results.
               </div>
             </div>
           </div>
 
           <div class="col-md">
             <div class="row">
-              <div class="col embed-responsive sketchy-video">
+              <div class="col embed-responsive msn-video">
                 <video muted autoplay loop playsinline>
-                  <source src="figures/sketchy_2.mp4" type="video/mp4">
+                  <source src="data/osrt_results_2.mp4" type="video/mp4">
                   Sorry, your browser doesn't support embedded videos.
                 </video>
               </div>
             </div>
+          </div>
+        </div>
 
+        <div class="row">
+
+          <div class="col-md">
             <div class="row">
-              <div class="col">
-                <p class="text-center text-secondary">Much performance.
+              <div class="col embed-responsive msn-video">
+                <video muted autoplay loop playsinline>
+                  <source src="data/osrt_results_3.mp4" type="video/mp4">
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="row">
+              <div class="col embed-responsive msn-video">
+                <video muted autoplay loop playsinline>
+                  <source src="data/osrt_results_4.mp4" type="video/mp4">
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col embed-responsive cater-video">
-            <video muted autoplay loop playsinline>
-              <source src="figures/cater.mp4" type="video/mp4">
-              Sorry, your browser doesn't support embedded videos.
-            </video>
-          </div>
-        </div>
 
         <div class="row">
           <div class="col">
-            <p class="text-center text-secondary">Wow.
+            <p class="text-center text-secondary"><i>Figure</i>: Qualitative scene decomposition and novel view synthesis results on unseen 3D scenes.
           </div>
         </div>
       </div>
@@ -244,7 +208,6 @@
           </div>
         </div>
       </div>
-    </div>
 
 
 
@@ -280,9 +243,6 @@
 
     <div class="footnote">
       <div class="container">
-<!-- 
-        <p>For questions / comments, reach out to: <a href="mailto:osrt@msajjadi.com">Mehdi S. M. Sajjadi</a></p>
--->
       </div>
     </div>
 
