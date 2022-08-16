@@ -7,7 +7,8 @@
     <meta name="description"
           content="Object Scene Representation Transformer">
     <meta name="author"
-          content="Mehdi S. M. Sajjadi, Daniel Duckworth, Aravindh Mahendran, Sjoerd van Steenkiste, Filip Pavetić, Mario Lučić, Leonidas J. Guibas, Klaus Greff, Thomas Kipf">
+          content="Mehdi S. M. Sajjadi, Daniel Duckworth, Aravindh Mahendran, Sjoerd van Steenkiste, Filip Pavetić, Mario Lučić, 
+Leonidas J. Guibas, Klaus Greff, Thomas Kipf">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
@@ -97,6 +98,8 @@
       <div class="paper-link">
         <p class="text-center">
           <a class="btn btn-primary" href="https://arxiv.org/abs/2206.06922" target="_blank">Paper</a>
+          <a class="btn btn-primary" href=#code>Code</a>
+          <a class="btn btn-primary" href=#dataset>Dataset</a>
         </p>
       </div>
     </div>
@@ -110,7 +113,8 @@
       <div class="row">
         <div class="col">
           <p class="text-center text-secondary neg-space">
-            <i>Figure</i>: OSRT is a 3D scene representation learning method that decomposes scenes into individual objects without supervision.
+            <i>Figure</i>: OSRT is a 3D scene representation learning method that decomposes scenes into individual objects without 
+supervision.
           </p>
         </div>
       </div>
@@ -120,7 +124,15 @@
         <div class="row">
           <div class="col">
             <p class="description">
-              A compositional understanding of the world in terms of objects and their geometry in 3D space is considered a cornerstone of human cognition. Facilitating the learning of such a representation in neural networks holds promise for substantially improving labeled data efficiency. As a key step in this direction, we make progress on the problem of learning 3D-consistent decompositions of complex scenes into individual objects in an unsupervised fashion. We introduce <i>Object Scene Representation Transformer (OSRT)</i>, a 3D-centric model in which individual object representations naturally emerge through novel view synthesis. OSRT scales to significantly more complex scenes with larger diversity of objects and backgrounds than existing methods. At the same time, it is multiple orders of magnitude faster at compositional rendering thanks to its light field parametrization and the novel <i>Slot Mixer</i> decoder. We believe this work will not only accelerate future architecture exploration and scaling efforts, but it will also serve as a useful tool for both object-centric as well as neural scene representation learning communities.
+              A compositional understanding of the world in terms of objects and their geometry in 3D space is considered a 
+cornerstone of human cognition. Facilitating the learning of such a representation in neural networks holds promise for substantially 
+improving labeled data efficiency. As a key step in this direction, we make progress on the problem of learning 3D-consistent 
+decompositions of complex scenes into individual objects in an unsupervised fashion. We introduce <i>Object Scene Representation 
+Transformer (OSRT)</i>, a 3D-centric model in which individual object representations naturally emerge through novel view synthesis. 
+OSRT scales to significantly more complex scenes with larger diversity of objects and backgrounds than existing methods. At the same 
+time, it is multiple orders of magnitude faster at compositional rendering thanks to its light field parametrization and the novel 
+<i>Slot Mixer</i> decoder. We believe this work will not only accelerate future architecture exploration and scaling efforts, but it 
+will also serve as a useful tool for both object-centric as well as neural scene representation learning communities.
             </p>
           </div>
         </div>
@@ -132,7 +144,9 @@
             <h2>Qualitative Results</h2>
             <hr />
             <p class="description">
-              OSRT is able to learn object-decomposed 3D scene representations without supervision on complex multi-object scenes with a large variety of objects and textured backgrounds. Below, we show example qualitative results on 3D scenes not seen during model training.
+              OSRT is able to learn object-decomposed 3D scene representations without supervision on complex multi-object scenes 
+with a large variety of objects and textured backgrounds. Below, we show example qualitative results on 3D scenes not seen during 
+model training.
             </p>
           </div>
         </div>
@@ -189,13 +203,31 @@
 
         <div class="row">
           <div class="col">
-            <p class="text-center text-secondary"><i>Figure</i>: Qualitative scene decomposition and novel view synthesis results on unseen 3D scenes.
+            <p class="text-center text-secondary"><i>Figure</i>: Qualitative scene decomposition and novel view synthesis results on 
+unseen 3D scenes.
           </div>
         </div>
       </div>
 
 
 
+      <!-- Code -->
+      <div class="content-block code", id="code">
+       <h2>Code</h2>
+       <hr />
+       Coming soon.
+      </div>
+
+      <!-- Dataset -->
+      <div class="content-block dataset", id="dataset">
+       <h2>Dataset</h2>
+       <hr />
+       We use a new MSN-Hard dataset that is very similar to SRT's MultiShapenet dataset, though our dataset contains instance labels required for evaluating OSRT.
+       The path to our version is following: <code>builder = sunds.builder('kubric:kubric/multi_shapenet_conditional')</code>.
+       Please see <a href="https://srt-paper.github.io/#dataset", target="_blank">SRT Website (Dataset)</a> for detailed 
+instructions on how to load the dataset.
+      </div>
+        
       <!-- Related Projects -->
       <div class="content-block citation">
         <div class="row">
@@ -208,7 +240,6 @@
           </div>
         </div>
       </div>
-
 
 
 
@@ -258,3 +289,4 @@
             crossorigin="anonymous"></script>
   </body>
 </html>
+
